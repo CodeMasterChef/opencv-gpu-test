@@ -1,4 +1,5 @@
-# opencv-dnn-cuda-test
+# opencv-gpu-test:
+
 Sample code of testing functions of OpenCV with CUDA-enabled DNN modules.
 
 # Setting up
