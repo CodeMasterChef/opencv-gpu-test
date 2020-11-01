@@ -13,7 +13,7 @@ args = vars(ap.parse_args())
 print("[INFO] loading YOLO from disk...")
 net = cv.dnn.readNet(model="../yolos/yolov3.weights", config="../yolos/yolov3.cfg")
 
-if(arg["use-gpu"] == 1):
+if(args["use-gpu"] == 1):
 	print("[INFO] Using GPU: setting preferable backend and target to CUDA...")
 	net.setPreferableBackend(cv.dnn.DNN_BACKEND_CUDA)
 	net.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA)
