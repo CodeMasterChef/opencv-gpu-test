@@ -6,6 +6,7 @@ confidence_threshold = 0.5
 nms_threshold = 0.4
 num_classes = 80
 
+ap = argparse.ArgumentParser()
 ap.add_argument("-gpu", "--use-gpu", type=number, default=1, help="Use GPU if the config -gpu=1")
 args = vars(ap.parse_args())
 
