@@ -7,13 +7,13 @@ nms_threshold = 0.4
 num_classes = 80
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-gpu", "--use-gpu", type=int, default=1, help="Use GPU if the config -gpu=1")
+ap.add_argument("-gpu", "--use_gpu", type=int, default=1, help="Use GPU if the config -gpu=1")
 args = vars(ap.parse_args())
 
 print("[INFO] loading YOLO from disk...")
 net = cv.dnn.readNet(model="../yolos/yolov3.weights", config="../yolos/yolov3.cfg")
 
-if(args["use-gpu"] == 1):
+if(args["use_gpu"] == 1):
 	print("[INFO] Using GPU: setting preferable backend and target to CUDA...")
 	net.setPreferableBackend(cv.dnn.DNN_BACKEND_CUDA)
 	net.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA)
