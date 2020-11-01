@@ -25,6 +25,7 @@ Run with CPU:
 python main.py
 ```
 
+# References:
 
 Then go to either [Python](https://github.com/Cuda-Chen/opencv-dnn-cuda-test/tree/master/python_code)
  or [C++](https://github.com/Cuda-Chen/opencv-dnn-cuda-test/tree/master/cpp_code) part to validate the installation of OpenCV
