@@ -7,6 +7,24 @@ $ cd yolos
 $ wget https://pjreddie.com/media/files/yolov3.weights
 $ cd ..
 ```
+# Run with Python benchmark:
+
+```
+cd python_code
+```
+
+Run with GPU:
+
+```
+python main.py -gpu=1
+```
+
+Run with CPU:
+
+```
+python main.py
+```
+
 
 Then go to either [Python](https://github.com/Cuda-Chen/opencv-dnn-cuda-test/tree/master/python_code)
  or [C++](https://github.com/Cuda-Chen/opencv-dnn-cuda-test/tree/master/cpp_code) part to validate the installation of OpenCV
